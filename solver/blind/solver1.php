@@ -15,8 +15,7 @@ function post_request($url, $data) {
 	curl_close($handle);
 	
 	return array(
-		'page' => $page,
-		'time' => $time
+		'page' => $page
 	);
 }
 

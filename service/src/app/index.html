@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>WORKSHOP - WEB</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <!-- Alertify -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+    
+      <!-- Alertify -->
+  <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+    <div class="well well-sm">
+        <strong>Display</strong>
+        <div class="btn-group">
+            <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+            </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
+                class="glyphicon glyphicon-th"></span>Grid</a>
+        </div>
+    </div>
+    <div id="products" class="row list-group">
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Login</h4>
+                    <p class="group inner list-group-item-text">
+						<br>
+						Link : <a class="" href="login" target="_blank">Klik disini</a>
+						</p>
+                    <div class="row">
+						<form action="" method="POST">
+							<div class="col-xs-12 col-md-6">
+								<div class="form-group">
+									<input type="text" id="flag-login" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Submit FLAG">
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<div class="form-group">
+									<button name="submit" value="flag-login" class="btn btn-primary">Submit</button>
+								</div>
+							</div>
+						</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Union</h4>
+                    <p class="group inner list-group-item-text">
+						<br>
+						Link : <a class="" href="union" target="_blank">Klik disini</a>
+						</p>
+                    <div class="row">
+						<form action="" method="POST">
+							<div class="col-xs-12 col-md-6">
+								<div class="form-group">
+									<input type="text" id="flag-union" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Submit FLAG">
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<div class="form-group">
+									<button name="submit" value="flag-union" class="btn btn-primary">Submit</button>
+								</div>
+							</div>
+						</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Error</h4>
+                    <p class="group inner list-group-item-text">
+						<br>
+						Link : <a class="" href="error" target="_blank">Klik disini</a>
+						</p>
+                    <div class="row">
+						<form action="" method="POST">
+							<div class="col-xs-12 col-md-6">
+								<div class="form-group">
+									<input type="text" id="flag-error" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Submit FLAG">
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<div class="form-group">
+									<button name="submit" value="flag-error" class="btn btn-primary">Submit</button>
+								</div>
+							</div>
+						</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Blind</h4>
+                    <p class="group inner list-group-item-text">
+						<br>
+						Link : <a class="" href="blind" target="_blank">Klik disini</a>
+						</p>
+                    <div class="row">
+						<form action="" method="POST">
+							<div class="col-xs-12 col-md-6">
+								<div class="form-group">
+									<input type="text" id="flag-blind" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Submit FLAG">
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<div class="form-group">
+									<button name="submit" value="flag-blind" class="btn btn-primary">Submit</button>
+								</div>
+							</div>
+						</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+        
+    </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+<script>
+	$("button").click(function(e) {
+    e.preventDefault();
+    $.ajax({
+		
+        type: "POST",
+        url: "./cek-flag.php",
+        data: { 
+            flag: $("#"+$(this).val()).val(), // < note use of 'this' here
+        },
+        success: function(res) {
+			if (res.code == 200) {
+				//console.log($(this));
+				alertify.success(res.message);
+				console.log(res);
+			} else {
+              //console.log('Terjadi kesalahan');
+              alertify.error(res.message);
+            }
+        },
+        error: function(res) {
+            alert('error');
+        }
+    });
+});
+</script>
+
+</body>
+</html>

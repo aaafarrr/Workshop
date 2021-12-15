@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  main:
+    build: .
+    container_name: workshop_web
+    restart: on-failure
+    ports:
+      - "2088:80"

